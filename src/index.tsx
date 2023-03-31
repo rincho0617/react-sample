@@ -1,15 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './App';  // app関数を読み込み
 import reportWebVitals from './reportWebVitals';
+import Hello from './components/Hello';
+import Message from './components/Message';
+import Page from './components/ContainerSample';
+import Counter from './components/UseStateSample';
 
 const root = ReactDOM.createRoot(
+  // index.htmlにあるrootをIDに持つ要素を指定している
   document.getElementById('root') as HTMLElement
 );
 root.render(
+  // <h1>見出し</h1>
+  // 描画するJSXタグを指定している
   <React.StrictMode>
-    <App />
+    <Counter initialValue={0}/>
   </React.StrictMode>
 );
 
