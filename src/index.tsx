@@ -8,6 +8,8 @@ import Message from './components/Message';
 import Page from './components/ContainerSample';
 import Counter from './components/UseStateSample';
 import { Parent } from './components/ButtonSample';
+import { UseMemoSample } from './components/UseMemoSample';
+import { Clock } from './components/Clock';
 
 const root = ReactDOM.createRoot(
   // index.htmlにあるrootをIDに持つ要素を指定している
@@ -17,7 +19,7 @@ root.render(
   // <h1>見出し</h1>
   // 描画するJSXタグを指定している
   <React.StrictMode>
-    <Parent/>
+    <Clock/>
   </React.StrictMode>
 );
 
